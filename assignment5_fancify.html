@@ -1,0 +1,63 @@
+	<!-- Ethan A5 webpage, stylesheet fancify --!>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 5</title>
+  <script src="fancifymytext.js"></script>
+  <!--<link rel="stylesheet" href="styles.css">--!>
+</head>
+<body>
+	
+	<h1>Fancify my Text</h1>
+	
+  <nav>
+    <a class="nav-button" href="index.html">Home</a>
+    <a class="nav-button" href="assignment10.html">Assignment 10</a>
+  </nav>
+
+  <!-- Text fieldset -->
+    <fieldset>
+      <legend>Text</legend>
+      <textarea id="textInput" rows="4" cols="30"></textarea>
+    </fieldset>
+
+    <!-- Controls fieldset -->
+    <fieldset>
+      <legend>Fancify</legend>
+
+      <!-- Bigger button -->
+      <button type="button" onclick="makeBigger()">Bigger!</button>
+      <br /><br />
+
+      <!-- Radio buttons -->
+      <label>
+        <input
+          type="radio"
+          name="fanciness"
+          id="fancy"
+          onchange="fancify()"
+        />
+        FancyShmancy
+      </label>
+      <br />
+      <label>
+        <input
+          type="radio"
+          name="fanciness"
+          id="boring"
+          onchange="fancify()"
+          checked
+        />
+        BoringBetty
+      </label>
+      <br /><br />
+
+      <!-- Moo button -->
+      <button type="button" onclick="moo()">Moo</button>
+    </fieldset>
+
+  <script src="darkmode.js"></script>
+</body>
+</html>
